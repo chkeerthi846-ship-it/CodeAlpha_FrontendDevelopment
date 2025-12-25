@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+nav {
+    background: #222;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #f39c12;
+}
+
+/* HERO */
+#hero {
+    height: 90vh;
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 3rem;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #f39c12;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+/* PROJECTS */
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: #f4f4f4;
+    padding: 25px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* SKILLS */
+.skills span {
+    display: inline-block;
+    background: #2575fc;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+/* RESUME */
+.resume-section {
+    background: #f4f6fb;
+}
+
+.resume-card {
+    background: white;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.resume-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 30px;
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.resume-btn:hover {
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    background: #222;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
