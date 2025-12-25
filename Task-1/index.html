@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Image Gallery</h1>
+
+<!-- Filter Buttons -->
+<div class="filters">
+  <button onclick="filterImages('all')">All</button>
+  <button onclick="filterImages('nature')">Nature</button>
+  <button onclick="filterImages('animals')">Animals</button>
+</div>
+
+<!-- Image Gallery -->
+<div class="gallery">
+
+  <!-- 🌿 Nature Images (10) -->
+  <img src="https://picsum.photos/id/1015/400/300" class="image nature" onclick="openLightbox(0)">
+  <img src="https://picsum.photos/id/1016/400/300" class="image nature" onclick="openLightbox(1)">
+  <img src="https://picsum.photos/id/1020/400/300" class="image nature" onclick="openLightbox(2)">
+  <img src="https://picsum.photos/id/1021/400/300" class="image nature" onclick="openLightbox(3)">
+  <img src="https://picsum.photos/id/1022/400/300" class="image nature" onclick="openLightbox(4)">
+  <img src="https://picsum.photos/id/1023/400/300" class="image nature" onclick="openLightbox(5)">
+  <img src="https://picsum.photos/id/1026/400/300" class="image nature" onclick="openLightbox(6)">
+  <img src="https://picsum.photos/id/1027/400/300" class="image nature" onclick="openLightbox(7)">
+  <img src="https://picsum.photos/id/1031/400/300" class="image nature" onclick="openLightbox(8)">
+  <img src="https://picsum.photos/id/1033/400/300" class="image nature" onclick="openLightbox(9)">
+
+  <!-- 🐾 Animal Images (10) -->
+  <img src="https://picsum.photos/id/1024/400/300" class="image animals" onclick="openLightbox(20)">
+  <img src="https://picsum.photos/id/1025/400/300" class="image animals" onclick="openLightbox(21)">
+  <img src="https://picsum.photos/id/1062/400/300" class="image animals" onclick="openLightbox(22)">
+  <img src="https://picsum.photos/id/1063/400/300" class="image animals" onclick="openLightbox(23)">
+  <img src="https://picsum.photos/id/1064/400/300" class="image animals" onclick="openLightbox(24)">
+  <img src="https://picsum.photos/id/1065/400/300" class="image animals" onclick="openLightbox(25)">
+  <img src="https://picsum.photos/id/1074/400/300" class="image animals" onclick="openLightbox(26)">
+  <img src="https://picsum.photos/id/1070/400/300" class="image animals" onclick="openLightbox(27)">
+  <img src="https://picsum.photos/id/1084/400/300" class="image animals" onclick="openLightbox(28)">
+  <img src="https://picsum.photos/id/1081/400/300" class="image animals" onclick="openLightbox(29)">
+
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <span class="close" onclick="closeLightbox()">×</span>
+  <button class="prev" onclick="changeImage(-1)">❮</button>
+  <img id="lightbox-img">
+  <button class="next" onclick="changeImage(1)">❯</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
